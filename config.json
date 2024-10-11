@@ -11,7 +11,7 @@
     },
     "bot3": {
         "source": "https://github.com/juger1/content.git",
-        "branch": "hentai"
+        "branch": "hentai",
         "run": "main.py"
     }
 }
