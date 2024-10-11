@@ -2,16 +2,19 @@
     "bot1": {
         "source": "https://github.com/juger1/content.git",
         "branch": "master",
-        "run": "main.py"
+        "run": "main.py",
+        "env": {}
     },
     "bot2": {
         "source": "https://github.com/juger1/content.git",
         "branch": "main",
-        "run": "main.py"
+        "run": "main.py",
+        "env": {}
     },
     "bot3": {
         "source": "https://github.com/juger1/content.git",
         "branch": "hentai",
-        "run": "main.py"
+        "run": "main.py",
+        "env": {}
     }
 }
