@@ -33,10 +33,15 @@ def load_config(file_path):
         prefix = generate_prefix() 
         prefixed_bot_name = f"{prefix} {bot_name}"
 
-        if not all(key in bot_config for key in ['source', 'run', 'env']):
+        # Ensure 'source' and 'run' are in the bot_config
+        if not all(key in bot_config for key in ['source', 'run']):
             logging.error(f"Configuration for {prefixed_bot_name} is missing required fields.")
             raise ValueError(f"Invalid configuration for {prefixed_bot_name}.")
 
+        # Set default 'env' if not present
+        bot_config.setdefault('env', {})
+
+        # Ensure source is a valid URL
         if not bot_config['source'].startswith('http'):
             logging.error(f"Invalid source URL for {prefixed_bot_name}.")
             raise ValueError(f"Invalid source URL for {prefixed_bot_name}.")
@@ -184,4 +189,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
