@@ -1,9 +1,9 @@
 {   
     "bot1": {
-        "source": "https://github.com/juger1/content.git",
-        "branch": "master",
-        "run": "main.py",
-        "env": {}
+        "source": "https://github.com/KingVishal703/Digital-Rename-Bot_pro.git",
+        "branch": "main",
+        "run": "bot.py",
+        "env": {BOT_TOKEN,=7904714295:AAEsI6PYxcHuDPKJBZr2Cuvv4JFGnhqJUFk}
     },
     "bot2": {
         "source": "https://github.com/juger1/content.git",
