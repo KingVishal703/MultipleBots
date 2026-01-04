@@ -10,7 +10,7 @@
     "bot2": {
         "source": "https://github.com/KingVishal703/Courses-FileShare-Bot.git",
         "branch": "main",
-        "run": "bot.py",
+        "run": "app.py",
         "env":  {
             "BOT_TOKEN": "7851596976:AAEr1J0yP4TbbX007Nz8_cRkNsb1z92HZrk"
         }
