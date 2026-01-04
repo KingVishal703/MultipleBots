@@ -4,15 +4,18 @@
         "branch": "main",
         "run": "bot.py",
         "env": {
-            "TG_BOT_TOKEN": "7851596976:AAEr1J0yP4TbbX007Nz8_cRkNsb1z92HZrk"
+            "TG_BOT_TOKEN": "PUT_NEW_TOKEN_HERE"
         }
     },
     "bot2": {
-        "source": "",
+        "source": "https://github.com/KingVishal703/Courses-FileShare-Bot.git",
         "branch": "main",
         "run": "bot.py",
-        "env":  {
-            ""
+        "env": {
+            "BOT_TOKEN": "PUT_NEW_TOKEN_HERE",
+            "API_ID": "123456",
+            "API_HASH": "abcdef1234567890",
+            "OWNER_ID": "5654093580"
         }
     },
     "bot3": {
