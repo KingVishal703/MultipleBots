@@ -8,6 +8,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     git \
     curl \
+    tmux \
     && rm -rf /var/lib/apt/lists/*
 
 # ================= PYTHON DEPS ================
@@ -21,7 +22,7 @@ COPY . .
 # ================= START SCRIPT ===============
 RUN chmod +x start.sh
 
-# ================= EXPOSE (if dashboard) ======
+# ================= EXPOSE =====================
 EXPOSE 8000
 
 # ================= START ======================
