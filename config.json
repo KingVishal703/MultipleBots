@@ -1,18 +1,18 @@
 {
     "bot1": {
-        "source": "https://github.com/KingVishal703/Digital-Rename-Bot_pro.git",
-        "branch": "main",
-        "run": "bot.py",
-        "env": {
-            "BOT_TOKEN": "7904714295:AAEsI6PYxcHuDPKJBZr2Cuvv4JFGnhqJUFk"
-        }
-    },
-    "bot2": {
         "source": "https://github.com/KingVishal703/FS1.git",
         "branch": "main",
         "run": "bot.py",
-        "env":  {
+        "env": {
             "TG_BOT_TOKEN": "7851596976:AAEr1J0yP4TbbX007Nz8_cRkNsb1z92HZrk"
+        }
+    },
+    "bot2": {
+        "source": "",
+        "branch": "main",
+        "run": "bot.py",
+        "env":  {
+            ""
         }
     },
     "bot3": {
