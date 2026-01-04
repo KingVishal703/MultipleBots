@@ -8,10 +8,12 @@
         }
     },
     "bot2": {
-        "source": "https://github.com/juger1/content.git",
+        "source": "https://github.com/KingVishal703/Btu.git",
         "branch": "main",
-        "run": "main.py",
-        "env": {}
+        "run": "bot.py",
+        "env":  {
+            "BOT_TOKEN": "8575350149:AAHSlhzLLRuP0Rk8NvmSdHnFqXz3pbZpKKg"
+        }
     },
     "bot3": {
         "source": "https://github.com/juger1/content.git",
