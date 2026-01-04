@@ -12,7 +12,7 @@
         "branch": "main",
         "run": "bot.py",
         "env":  {
-            "BOT_TOKEN": "8575350149:AAHSlhzLLRuP0Rk8NvmSdHnFqXz3pbZpKKg"
+            "BOT_TOKEN": "7614452604:AAE0P2nRaJzsmwFFi5mvxVZ-InowwEqfsww"
         }
     },
     "bot3": {
