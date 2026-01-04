@@ -1,19 +1,28 @@
-# Base image
-FROM mysterydemon/botcluster:latest
+# ================= BASE IMAGE =================
+FROM python:3.11-slim
 
-# Set working directory
+# ================= WORKDIR ====================
 WORKDIR /app
 
-# Copy requirements file and install dependencies
-COPY requirements.txt ./
-RUN pip3 install --upgrade pip && pip3 install --root-user-action=ignore -r requirements.txt
+# ================= SYSTEM DEPS ================
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy the rest of the application code
+# ================= PYTHON DEPS ================
+COPY requirements.txt .
+RUN pip install --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
+
+# ================= APP FILES ==================
 COPY . .
 
-# Ensure start.sh is executable
-COPY start.sh /usr/local/bin/start.sh
-RUN chmod +x /usr/local/bin/start.sh
+# ================= START SCRIPT ===============
+RUN chmod +x start.sh
 
-# Use the start.sh script as the entry point when the container starts
-CMD ["/usr/local/bin/start.sh"]
+# ================= EXPOSE (if dashboard) ======
+EXPOSE 8000
+
+# ================= START ======================
+CMD ["bash", "start.sh"]
