@@ -8,11 +8,11 @@
         }
     },
     "bot2": {
-        "source": "https://github.com/KingVishal703/Btu.git",
+        "source": "https://github.com/KingVishal703/Courses-FileShare-Bot.git",
         "branch": "main",
         "run": "bot.py",
         "env":  {
-            "BOT_TOKEN": "7614452604:AAE0P2nRaJzsmwFFi5mvxVZ-InowwEqfsww"
+            "BOT_TOKEN": "7851596976:AAEr1J0yP4TbbX007Nz8_cRkNsb1z92HZrk"
         }
     },
     "bot3": {
